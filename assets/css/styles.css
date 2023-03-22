@@ -1,0 +1,126 @@
+/* -------------------------------- */
+
+/* Colors */
+:root{
+    --active-link: #0c38b5;
+    --normal-link: #96aae0;
+    --btn-primary: #0c38b5;
+    --btn-hover:   #1f46b1;
+    --white-text: #fff;
+    --darker-white: #dfdede;
+}
+
+/* ------------------------------- */
+
+
+/* --------------------------------------------- */
+
+/* External Imports */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* --------------------------------------------- */
+
+
+
+
+/* ---------------------------- */
+
+
+/* GLOBAL STYLING */
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    background: #fff !important;
+
+}
+
+body{
+    background-color: #e9ebf0;
+}
+
+a{
+    color: var(--normal-link) !important;
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--active-link) !important;
+}
+
+.active{
+    color: var(--active-link) !important;
+}
+
+span{
+    color: var(--active-link);
+}
+
+section{
+    padding: 65px 0 !important;
+}
+
+.btn-custom{
+    background: var(--btn-primary);
+    color: rgb(241, 241, 241);
+}
+
+.btn-custom:hover{
+    background: var(--btn-hover);
+
+}
+.custom-text{
+  color: var(--white-text) !important;
+}
+.custom-text:hover{
+  color: var(--white-text) !important;
+}
+
+/* ---------------------------- */
+
+/* Features CSS */
+
+.why-us .box {
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all ease-in-out 0.3s;
+    height: 100%;
+  }
+  
+  .why-us .box span {
+    display: block;
+    font-size: 70px;
+    font-weight: 700;
+    color: var(--active-link);
+  }
+  
+  .why-us .box h4 {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .why-us .box p {
+    color: #aaaaaa;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .why-us .box:hover {
+    background: var(--active-link);
+    padding: 30px 30px 70px 30px;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+  }
+  
+  .why-us .box:hover span,
+  .why-us .box:hover h4,
+  .why-us .box:hover p {
+    color: #fff;
+  }
+
+/* --------------------------- */
