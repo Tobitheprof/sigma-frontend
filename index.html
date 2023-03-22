@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/vendor/animate.css/animate.css">
     <link rel="stylesheet" href="assets/vendor/bootstrap-icons-1.10.3/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/vendor/aos/aos.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 </head>
@@ -68,12 +70,12 @@
         <div class="container-lg">
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-4 text-center text-md-start">
-                    <h2 class="display-4"><span class="fw-bold">Sigma</span></h2>
+                    <h2 class="display-4 animate__animated animate__fadeInDown"><span class="fw-bold">Sigma</span></h2>
                     <!-- <h4 class="display-6 text-muted">The free portfolio generator</h4> -->
-                    <p class="lead my-3 text-muted justice">Sigma is your one stop health app where you can find hospitals and doctors, enjoy free mdeical courses, latest medical news and also connect with emergency services as well as see first aid procedures for common illnesses.</p>
-                    <a href="#" class="btn btn-custom custom-text">Get Started</a>
+                    <p class="lead my-3 text-muted justice animate__animated animate__fadeInUp">Sigma is your one stop health app where you can find hospitals and doctors, enjoy free mdeical courses, latest medical news and also connect with emergency services as well as see first aid procedures for common illnesses.</p>
+                    <a href="#" class="btn btn-custom custom-text animate__animated animate__fadeInUp">Get Started</a>
                 </div>
-                <div class="col-md-8 d-none d-md-block text-center">
+                <div class="col-md-8 d-none d-md-block text-center animate__animated animate__fadeInRight">
                     <span class="goat" data-bs-placement="bottom" title="Tobi is tha GOAT">
                         <img src="assets/img/12557511_4997671-removebg.png" alt="coffee bag" class="img-fluid">
                     </span>
@@ -92,10 +94,12 @@
             <!--Marketing Item Start-->
             <div class="row featurette mb-4 justify-content-center align-items-center mt-3" data-aos="fade-down" data-aos-delay="300" data-aos-offset="0">
                 <div class="col-md-7 order-md-2 mt-5">
-                    <h3 class="featurette-heading header-color">What's Sigma? <span class="muted">and how can it help me?</span></h3>
-                    <p class="lead">Sigma is a one stop web app for all of your medical needs. With Sigma, you get access to a whole lot of cool features that'll make taking care of medical needs a breeze. Get started today to start enjoying these benefits</p>
+                    <div class="animate__animated animate__fadeInRight">
+                        <h3 class="featurette-heading header-color">What's Sigma? <span class="muted">and how can it help me?</span></h3>
+                        <p class="lead">Sigma is a one stop web app for all of your medical needs. With Sigma, you get access to a whole lot of cool features that'll make taking care of medical needs a breeze. Get started today to start enjoying these benefits</p>
+                    </div>
                 </div>
-                <div class="col-md-5 order-md-1">
+                <div class="col-md-5 order-md-1 animate__animated animate__fadeInDown">
                     <img src="assets/img/7069376_3304458.jpg" alt="image" class="img-fluid" width="500" height="500">
                 </div>
             </div>
@@ -104,11 +108,11 @@
             <!--Marketing Item Start-->
             <div class="row featurette mb-4 justify-content-center align-items-center mt-3" data-aos="fade-down" data-aos-delay="300" data-aos-offset="0">
                 <div class="col-md-7 mt-5">
-                    <h3 class="featurette-heading header-color">Why did you make Paradox? <span class="muted">And no, I'm not about to drop motivational text</span></h3>
-                    <p class="lead">Other than the obvious reason about me being Chad and Peak, I made Paradox to help students study better and faster with the help of well detailed flashcards that have extra resources attached to them for further learning.</p>
+                    <h3 class="featurette-heading header-color">What features does Sigma offer? <span class="muted">How do I take advantage of them?</span></h3>
+                    <p class="lead">Sigma offers a wide range of indemand features such as hospital locators, booking appointments with doctors, taking free courses and so much more. To get a full list of all of our features, click <a href="#why-us" class="active">here</a>. To start taking advantage of these features, <a href="#" class="active">register</a>  on Sigma today</p>
                 </div>
                 <div class="col-md-5">
-                    <img src="{% static 'assets/img/R.png' %}" alt="image" width="500" height="500" class="img-fluid">
+                    <img src="assets/img/6974922_4447 (1).jpg" alt="image" width="500" height="500" class="img-fluid">
                 </div>
             </div>
             <!--Marketing Item End-->
@@ -133,8 +137,8 @@
         <div class="container">
   
           <div class="section-title">
-            <h2>Why should I use <span>Paradoxx?</span></h2>
-            <p></p>
+            <h2>Why should I use <span>Sigma?</span></h2>
+            <p class="lead">Check out the awesome and unique features that makes Sigma awesome</p>
           </div>
   
           <div class="row">
@@ -193,10 +197,81 @@
     </section>
     <!-- End -->
 
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container">
+  
+          <div class="section-title">
+            <h2><span>Contact</span> Us</h2>
+            <p>Want to reach out to us? Send us a message and our support team will get back to you ASAP</p>
+          </div>
+        </div>
+
+        <div class="container mt-5">
+  
+          <div class="info-wrap">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 info">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>We're a remote company</p>
+              </div>
+  
+              <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                <i class="bi bi-clock"></i>
+                <h4>Open Hours:</h4>
+                <p>We're always available to serve you 24/7</p>
+              </div>
+  
+              <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>tobiekundayo07@gmail.com</p>
+              </div>
+  
+              <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+234 (0)91 5937 2550</p>
+              </div>
+            </div>
+          </div>
+  
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+  
+        </div>
+    </section><!-- End Contact Section -->
+  
+
 
 
     
 
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
