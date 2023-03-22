@@ -4,11 +4,12 @@
 :root{
     --active-link: #0c38b5;
     --normal-link: #7695e2;
-    --muted-text : #a3b7ecad;
+    --muted-text : #99b3fcf3;
     --btn-primary: #0c38b5;
     --btn-hover:   #1f46b1;
     --white-text: #fff;
     --darker-white: #dfdede;
+    --light-black: #413e3e;
 }
 
 /* ------------------------------- */
@@ -76,11 +77,20 @@ section{
     background: var(--btn-hover);
 
 }
+
 .custom-text{
   color: var(--white-text) !important;
 }
+
 .custom-text:hover{
   color: var(--white-text) !important;
+}
+
+.rounded{
+  border-radius: 25px !important;
+}
+.navbar-toggler-icon .navbar-toggler{
+  color: var(--light-black) !important;
 }
 
 /* ---------------------------- */
@@ -115,16 +125,19 @@ section{
     padding: 0;
   }
   
-  .why-us .box:hover {
+  .why-us .box:hover{
     background: var(--active-link);
+    color: var(--white-text);
     padding: 30px 30px 70px 30px;
     box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
   }
+
+
   
   .why-us .box:hover span,
   .why-us .box:hover h4,
   .why-us .box:hover p {
-    color: #fff;
+    color: #fff !important;
   }
 
 /* --------------------------- */
