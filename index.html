@@ -14,7 +14,7 @@
 </head>
 <body>
     <!--Nav Bar Start-->
-    <nav class="navbar navbar-expand-md navbar-dark shadow bg-light sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark shadow sticky-top bg-dark">
         <div class="container-xl">
             <a href="#" class="navbar-brand">
                 <img src="assets/img/logo.png" alt="" class="img-fluid" width="50" height="70"> <span>SIGMA</span>
@@ -33,7 +33,6 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link">Login</a>
                     </li>
-                    <a href="#" class="nav-link btn btn-custom custom-text rounded p-2">Get Started</a>
                 </ul>
             </div>
         </div>
@@ -43,18 +42,42 @@
     <!--Offcanvas Start (NavBar) --> 
     <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="sidebar-label">Account Settings</h5>
+            <h5 class="offcanvas-title" id="sidebar-label"><span><img src="assets/img/logo.png" alt="" width="50" height="50">Sigma</span></h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebar" aria-label="Close"></button>
         </div>
         <div class="border-bottom fw-bold"></div>
 
         <div class="offcanvas-body">
-            <a href="{% url 'p-and-c' %}" style="color: black; text-decoration: none;"><p class="lead ms-3"><i class="bi bi-person me-2"></i>Personal & Contact Information</p></a>
-            <a href="{% url 'work' %}" style="color: black; text-decoration: none;"><p class="lead ms-3"><i class="bi bi-briefcase me-2"></i>Work Experince</p></a>
-            <a href="{% url 'education' %}" style="color: black; text-decoration: none;"><p class="lead ms-3"><i class="bi bi-book me-2"></i>Education</p></a>
-            <a href="{% url 'skills' %}" style="color: black; text-decoration: none;"><p class="lead ms-3"><i class="bi bi-check-all me-2"></i>Skills</p></a>
-            <a href="{% url 'achievements' %}" style="color: black; text-decoration: none;"><p class="lead ms-3"><i class="bi bi-award me-2"></i>Achievements</p></a>
-            <a href="{% url 'resume' user %}" style="color: black; text-decoration: none;"><p class="lead ms-3"><i class="bi bi-briefcase-fill me-2"></i>Poftfolio</p></a>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link btn btn-custom custom-text rounded p-2">Get Started</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li> -->
+              </ul>
         </div>
         
         <div class="offcanvas-footer">
@@ -185,9 +208,9 @@
     
             <div class="col-lg-4 mt-4 mt-lg-0 mb-2 animate__animated animate__fadeInDown">
                 <div class="box">
-                    <span>i.bi.bi-</span>
+                    <span><i class="bi bi-folder"></i></span>
                     <h4>Organized Content</h4>
-                    <p>Unlike your life, Paradoxx, like it's brother Progenx is well organized👌</p>
+                    <p>Our medical app offers organized content for easy access to reliable medical information.</p>
                 </div>
             </div>
   
@@ -262,11 +285,6 @@
   
         </div>
     </section><!-- End Contact Section -->
-  
-
-
-
-    
 
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>

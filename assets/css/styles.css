@@ -89,7 +89,7 @@ section{
 .rounded{
   border-radius: 25px !important;
 }
-.navbar-toggler-icon .navbar-toggler{
+.navbar-toggler-icon{
   color: var(--light-black) !important;
 }
 
