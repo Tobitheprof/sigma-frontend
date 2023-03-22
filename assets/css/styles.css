@@ -3,7 +3,8 @@
 /* Colors */
 :root{
     --active-link: #0c38b5;
-    --normal-link: #96aae0;
+    --normal-link: #7695e2;
+    --muted-text : #a3b7ecad;
     --btn-primary: #0c38b5;
     --btn-hover:   #1f46b1;
     --white-text: #fff;
@@ -37,10 +38,10 @@ nav{
     background: #fff !important;
 
 }
-
+/* 
 body{
     background-color: #e9ebf0;
-}
+} */
 
 a{
     color: var(--normal-link) !important;
@@ -56,7 +57,10 @@ a:hover{
 }
 
 span{
-    color: var(--active-link);
+    color: var(--active-link) !important;
+}
+.muted{
+  color: var(--muted-text) !important;
 }
 
 section{
