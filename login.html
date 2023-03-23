@@ -98,26 +98,38 @@
                             <img src="assets/img/logo.png" alt="" width="70" height="70" class="mb-3">
                         </div>
 
-                        <div class="text-start ms-3">
-                            <h4 class="text-muted">Login to your account</h4>
+                        <div class="text-start ms-3 mt-3">
+                            <p class="fw-bold lead" style="color: #3f3e3e !important;">Login to your Account</p>
                             <!-- {% if messages %}
                             {% for message in messages %}
                             <p class="header-color">{{message}}</p>
                             {% endfor %}
                             {% endif %} -->
                         </div>
-                        <form action="" method="POST">
+                        <form action="" method="POST" class="">
                             <!-- {% csrf_token %} -->
                             <div class="p-2">
-                                <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                    <label for="floatingInput">Email address</label>
-                                </div>
-                                <input type="password" class="form-control mb-3" placeholder="Password" name="password">
-                                <button class="btn btn-secondary text-center mt-2 btn-custom btn-lg" type="submit">
+
+                                <input type="email" class="form-control mb-3" placeholder="name@example.com">
+
+                                <input type="email" class="form-control" placeholder="name@example.com">
+
+                                <button class="btn btn-secondary text-center mt-3 btn-custom mb-3 btn-xl shadow" type="submit">
                                     Login
                                 </button>
-                                <p class="text-center mt-5">Don't have an account?
+
+                                <div class="text-center"><p class="text-muted">- Or Login With -</p></div>
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col">
+                                        <div class="box">
+                                            <div class="">
+                                                <p class="text-center"><a href="#"><i class="bi bi-google"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="text-center mt-4">Don't have an account?
                                     <a href="{% url 'register' %}" style="text-decoration: none;"><span class="green-text">Sign Up</span></a>
                                 </p>
                                 <a href="#" style="text-decoration: none;"><p class="text-center">Forgot your password?</p></a>

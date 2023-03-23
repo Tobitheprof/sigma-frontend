@@ -39,11 +39,9 @@ nav{
     background: #fff !important;
 
 }
-/* 
 body{
-    background-color: #e9ebf0;
-} */
-
+  background: var(--white-text);
+}
 a{
     color: var(--normal-link) !important;
     text-decoration: none;
@@ -76,6 +74,9 @@ section{
 .btn-custom:hover{
     background: var(--btn-hover);
 
+}
+.btn-xl{
+  width: 320px;
 }
 
 .custom-text{
