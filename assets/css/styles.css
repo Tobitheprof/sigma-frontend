@@ -10,6 +10,7 @@
     --white-text: #fff;
     --darker-white: #dfdede;
     --light-black: #413e3e;
+    --shady-blue: #8b9bf1;
 }
 
 /* ------------------------------- */
@@ -92,6 +93,10 @@ section{
 }
 .navbar-toggler-icon{
   color: var(--light-black) !important;
+}
+
+#sidebar{
+  background-color: var(--active-link) !important;
 }
 
 /* ---------------------------- */
