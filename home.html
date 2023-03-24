@@ -4,84 +4,125 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-	<link rel="shortcut icon" href="{% static 'assets/img/Abudevs New Logo.png' %}" type="image/x-icon">
-	<title>ABUDevs | {{title}}</title>
+    <link rel="stylesheet" href="assets/vendor/bootstrap-icons-1.10.3/bootstrap-icons.css">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <title>Sigma | Dashboard</title>
     <style>
         section{
             padding: 35px 0;
         }
     </style>
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/vendor/bootstrap-icons-1.10.3/bootstrap-icons.css">
   </head>
   <body>
-		<div class="wrapper d-flex align-items-stretch">
-			<nav id="sidebar" class="animate__animated animate__flipInX">
+    <div class="wrapper d-flex align-items-stretch">
+      <nav id="sidebar" class="animate__animated animate__flipInX">
 				<div class="custom-menu">
-					<button type="button" id="sidebarCollapse" class="btn btn-success" style="background-color: #051ea7;">
-						<i class="bi bi-caret-right-fill"></i>
+					<button type="button" id="sidebarCollapse" class="btn btn-custom">
+						<i class="bi bi-text-right fw-bold"></i>
 						<span class="sr-only">Toggle Menu</span>
-	        		</button>
-        		</div>
+	        </button>
+        </div>
 				<div class="p-4">
 					<h1><a href="{% url 'home' %}" class="logo"><img src="assets/img/logo.png" alt="" width="100" height="100"></h1>
 					<ul class="list-unstyled components mb-5">
-						<li>
-							<a href="{% url 'home' %}" class="white-text"><i class="bi bi-house-fill mr-3 white-text"></i> Home</a>
-						</li>
-						<li class="dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
 
 						<li>
-						    <a href="{% url 'events' %}" class="white-text"><i class="bi bi-book-half mr-3"></i> Events</a>
+              <a href="{% url 'events' %}" class="white-text"><i class="bi bi-house mr-3 white-text"></i> Home</a>
+            </li>
+
+						<li class="active">
+	            <a href="#editSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="bi bi-pencil-fill mr-3"></i> Edit Profile</a>
+	            <ul class="collapse list-unstyled" id="editSubmenu">
+                <li>
+                    <a href="#"><i class="bi bi-clipboard-plus mr-3"></i> Medical Information</a>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-person-fill mr-3"></i> Personal and Contact Information</a>
+                </li>
+	            </ul>
+	          </li>
+
+						<li>
+						    <a href="{% url 'events' %}" class="white-text"><i class="bi bi-calendar-fill mr-3 white-text"></i> Events</a>
 						</li>
+
 						<li>
 						    <a href="{% url 'blog' %}" class="white-text"><i class="bi bi-file-spreadsheet mr-3 white-text"></i> Blog</a>
 						</li>
+
 						<li>
 						    <a href="{% url 'courses' %}" class="white-text"><i class="bi bi-card-heading mr-3 white-text"></i> Courses</a>
 						</li>
+
 						<li>
 						    <a href="{% url 'challenge' %}" class="white-text"><i class="bi bi-trophy mr-3 white-text"></i> Challenges</a>
 						</li>
+
 						<li>
 						    <a href="{% url 'logout' %}" class="white-text"><i class="bi bi-arrow-right mr-3 white-text"></i> Logout</a>
 						</li>
+
 					</ul>
 				</div>
 
 				<div class="footer">
-					<p class="mr-3">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Sigma</p>
+					<p class="mr-3">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | ABUDevs</p>
 				</div>
 			</nav>
 
-
 		<!-- Page Content  -->
 		<div id="content" class="p-2 p-md-5 pt-5">
+
 			<section id="header">
-                <h3>Welcome to <span>Sigma</span></h3>
-                <p class="lead">What would you like to do <span>today?</span></p>
-            </section>
-        
-                   
+        <h3>Welcome to <span>Sigma</span></h3>
+        <p class="lead">What would you like to do <span>today?</span></p>
+      </section>
+
+      <section id="popular-courses" class="courses">
+        <div class="" data-aos="fade-up">
+          <div class="row" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="course-item">
+                <img src="assets/img/7303557.jpg" class="img-fluid" alt="...">
+                <div class="course-content">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <a href="{{a.link_to_pay}}"><h4>Get Started</h4></a>
+                    <p class="price"></p>
+                  </div>
+  
+                  <h3><a href="">Book an Appointment</a></h3>
+                  <p>Don't wait until you're sick to visit the hospital. Study shows that people who visit a doctor at least once a month are healthier than those who do not. Book an appointment today to get started.</p>
+                  <div class="trainer d-flex justify-content-between align-items-center">
+                    <div class="trainer-profile d-flex align-items-center">
+                      <i class="bi bi-person-fill"></i>
+                      <span>Sigma</span>
+                    </div>
+                    <!-- <div class="trainer-rank d-flex align-items-center">
+                      <i class="bx bx-user"></i>&nbsp;50
+                      &nbsp;&nbsp;
+                      <i class="bx bx-heart"></i>&nbsp;65
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div> <!-- End Course Item-->  
+          </div>
+  
+        </div>
+      </section><!-- End Popular Courses Section -->
+
 		</div>
 	</div>
 
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="assets/js/nuutz.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/ass.js"></script>
   </body>
 </html>
