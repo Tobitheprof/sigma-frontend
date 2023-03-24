@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="assets/vendor/bootstrap-icons-1.10.3/bootstrap-icons.css">
     <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/vendor/aos/aos.css">
     <title>Sigma | Dashboard</title>
     <style>
         section{
@@ -27,11 +28,11 @@
 	        </button>
         </div>
 				<div class="p-4">
-					<h1><a href="{% url 'home' %}" class="logo"><img src="assets/img/logo.png" alt="" width="100" height="100"></h1>
+					<h1><a href="#" class="logo"><img src="assets/img/logo.png" alt="" width="100" height="100"></h1>
 					<ul class="list-unstyled components mb-5">
 
 						<li>
-              <a href="{% url 'events' %}" class="white-text"><i class="bi bi-house mr-3 white-text"></i> Home</a>
+              <a href="#" class="white-text"><i class="bi bi-house mr-3 white-text"></i> Home</a>
             </li>
 
 						<li class="active">
@@ -46,31 +47,31 @@
 	            </ul>
 	          </li>
 
+						<li class="active">
+	            <a href="#editSubmenu"><i class="bi bi-robot mr-3"></i> SigmaAI</a>
+	          </li>
+
 						<li>
-						    <a href="{% url 'events' %}" class="white-text"><i class="bi bi-calendar-fill mr-3 white-text"></i> Events</a>
+						    <a href="#" class="white-text"><i class="bi bi-file-spreadsheet mr-3 white-text"></i> Blog</a>
 						</li>
 
 						<li>
-						    <a href="{% url 'blog' %}" class="white-text"><i class="bi bi-file-spreadsheet mr-3 white-text"></i> Blog</a>
+						    <a href="#" class="white-text"><i class="bi bi-card-heading mr-3 white-text"></i> Courses</a>
 						</li>
 
 						<li>
-						    <a href="{% url 'courses' %}" class="white-text"><i class="bi bi-card-heading mr-3 white-text"></i> Courses</a>
+						    <a href="#" class="white-text"><i class="bi bi-trophy mr-3 white-text"></i> Challenges</a>
 						</li>
 
 						<li>
-						    <a href="{% url 'challenge' %}" class="white-text"><i class="bi bi-trophy mr-3 white-text"></i> Challenges</a>
-						</li>
-
-						<li>
-						    <a href="{% url 'logout' %}" class="white-text"><i class="bi bi-arrow-right mr-3 white-text"></i> Logout</a>
+						    <a href="#" class="white-text"><i class="bi bi-arrow-right mr-3 white-text"></i> Logout</a>
 						</li>
 
 					</ul>
 				</div>
 
 				<div class="footer">
-					<p class="mr-3">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | ABUDevs</p>
+					<p class="mr-3">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Sigma</p>
 				</div>
 			</nav>
 
@@ -83,8 +84,8 @@
       </section>
 
       <section id="popular-courses" class="courses">
-        <div class="" data-aos="fade-up">
-          <div class="row" data-aos="zoom-in" data-aos-delay="100">
+        <div class="" data-aos="fade-up"  data-aos-delay="500">
+          <div class="row" data-aos-delay="100">
 
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-3">
               <div class="course-item">
@@ -228,6 +229,8 @@
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script>AOS.init();</script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/ass.js"></script>
